@@ -1,0 +1,83 @@
+:root{
+  /* celeste tipo pelo de Rei (ajústalo si quieres) */
+  --rei-celeste: #9fd6f1;
+
+  --panel: rgba(255,255,255,.78);
+  --borde: rgba(0,0,0,.08);
+  --sombra: 0 18px 45px rgba(0,0,0,.18);
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--rei-celeste);
+  overflow-x: hidden;
+}
+
+
+/* Contenido encima */
+.overlay{
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+  background: radial-gradient(circle at 50% 25%, rgba(255,255,255,.20), rgba(255,255,255,0) 55%);
+}
+
+.card{
+  width: min(520px, 92vw);
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 22px;
+  box-shadow: var(--sombra);
+  padding: 18px 18px 16px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+h1{
+  margin: 6px 0 14px;
+  font-size: clamp(22px, 4.2vw, 34px);
+  letter-spacing: .5px;
+}
+
+.gif-wrap{
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  background: rgba(255,255,255,.45);
+}
+
+.gif{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn{
+  margin-top: 14px;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #0b6cff;
+  color: white;
+  box-shadow: 0 10px 20px rgba(11,108,255,.25);
+  transition: transform .08s ease, filter .12s ease;
+}
+.btn:hover{ filter: brightness(1.05); }
+.btn:active{ transform: translateY(2px) scale(.99); }
+
+.mini{
+  margin: 10px 0 0;
+  font-size: 13px;
+  opacity: .78;
+}
