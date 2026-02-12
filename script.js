@@ -1,5 +1,5 @@
 
-const YT_URL = "https://youtube.com/shorts/S7_ZuVzP-yw?si=AXJLFYucuWd1gx8O";
+const YT_URL = "https://www.youtube.com/watch?v=EE-xtCF3T94";
 // ==================
 
 const bg = document.getElementById("bg-reis");
@@ -46,3 +46,4 @@ window.addEventListener("resize", makeBackground);
 btn.addEventListener("click", () => {
   window.open(YT_URL, "_blank", "noopener,noreferrer");
 });
+
